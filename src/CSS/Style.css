@@ -1,0 +1,324 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+/* Шапка сайта */
+
+header
+{
+    width: 100%;
+    height: 515px;
+    color: white;
+    background: purple;
+}
+
+#logo
+{
+    display: block;
+    float: left;
+    font-size: 40px;
+    padding-top: 30px;
+    padding-left: 40px;
+    font-weight: 800;
+}
+
+#logo:hover {
+    cursor: pointer;
+}
+
+/* Стили для ссылок внутри шапки */
+
+header div a
+{
+    display: block;
+    float: left;
+    color: white;
+    margin-left: 10px;
+    padding: 15px; 
+}
+
+header div a:hover
+{
+    background: #52195e;
+    transition: all.7s ease; 
+}
+
+/* Блок ссылок внутри  шапки */
+
+#header-link-group
+{
+    display: block;
+    float: left;
+    position: relative;
+    bottom: 85px;
+    margin-left: 530px;
+    margin-top: 40px;    
+    font-size: 15px;
+}
+
+/* Стили для центральной надписи в шапке */
+
+#text-center
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+/* Стили для отступа нижней строчки от верхней  в шапке*/
+
+header div[id=text-center] span
+{
+    display: block;
+    margin-top: 15px;
+}
+
+/* Стили для центральной кнопки в шапке */
+
+header div[id=text-center] button
+{
+    margin-top: 50px;
+    padding: 10px; 
+    background: #e87110;
+    color: white;
+    font-size: 15px;
+    border:  none;
+    width: 300px;
+    height: 60px;
+    font-weight: 800;
+}
+
+/* Эффект при навидении на кнопку */
+
+header div[id=text-center] button:hover
+{
+    color: black;
+    transition: all.7s ease; 
+    cursor: pointer;
+}
+   
+/* ====================================== */
+
+/* Стили для основной части страницы */
+
+main
+{
+    width: 100%;
+    height: 685px;
+    color: white;
+    background: #4777d6;              
+}
+
+/* Надпись в  main */
+
+main span[id=big-label-form]
+{
+    font-size: 30px;
+    font-weight: 800;
+    padding-top: 100px;
+}
+
+main span
+{
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* .Форма обратной связи */
+
+form {
+    text-align: center;
+}
+
+form input
+{
+    position: relative;
+    left: 16px;
+    display: block;
+    float: left;
+    margin-top: 55px;
+    padding: 15px;
+    background: #344a8a;
+    border: none;
+    color: white;
+    width: 300px;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+/* Изминение текста подсказки внутри input для всех браузеров */
+
+input::-webkit-input-placeholder
+{
+    color: white;
+}
+
+input::-moz-input-placeholder
+{
+    color: white;
+}
+
+input:-ms-input-placeholder
+{
+    color: white;
+}
+
+/* Плавное изменение прозрачности текста подсказки в нутри input при нажатии для всех браузеров */
+
+input:focus::-webkit-input-placeholder 
+{
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+input:focus::-moz--placeholder 
+{
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+input:focus::-ms-input-placeholder 
+{
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+/* Плавное изменение прозрачности текста подсказки внутри textarea при нажатии, для всех браузеров */
+
+textarea:focus::-webkit-input-placeholder 
+{
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+textarea:focus::-moz--placeholder 
+{
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+textarea:focus::-ms-input-placeholder 
+{
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+}
+
+
+/* Отделльные стили для input позиционирования */
+
+#input-email
+{
+    margin-left: 24px;
+}
+
+#input-user-name
+{
+    margin-left: 298px;
+}
+
+/* Стили для поля ввода сообщения */
+
+form textarea
+{
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    background: #344a8a;
+    border: none;
+    color: white;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: 800;
+    width: 654px;
+    height: 125px;
+}
+
+/* Изминение текста подсказки внутри textarea для всех браузеров */
+
+textarea::-webkit-input-placeholder
+{
+    color: white;
+}
+
+textarea::-moz-input-placeholder
+{
+    color: white;
+}
+
+textarea:-ms-input-placeholder
+{
+    color: white;
+}
+
+/* Стили для кнопки отправить */
+
+form input[type=submit]
+{  
+    display: block;
+    position: relative;
+    left: 485px;
+    margin-top: 50px;
+    padding: 10px; 
+    width: 300px;
+    height: 60px;
+    font-size: 15px;
+    font-weight: 800;
+    background: #1cbde6;
+    color: white;
+    border: none;
+}
+
+main form input[type=submit]:hover
+{
+    color: black;
+    transition: all.5s ease;
+    cursor: pointer;
+}
+
+/* ======================================== */
+
+/* Подвал сайта */
+
+footer
+{
+    width: 100%;
+    height: 75px;
+    background: #4865bd;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* Стили для ссылок  соц. сетей */
+
+footer a
+{
+    display: block;
+    float: left;
+    color: white;
+    margin-top: 27px;
+    margin-left: 35px;
+}
+
+/* Блок ссылок footer */
+
+#footer-link-group 
+{
+    margin-left: 135px;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* Стили при навидении на ссылку соц. сетей */
+
+footer a:hover
+{
+    color: #1cbde6;
+    transition: all.5s ease;
+}
